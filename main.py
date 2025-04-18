@@ -5,7 +5,7 @@ while True:
   if myName.replace(" ", "").isalpha():
     break
   print("Excuse me! I am programmed to accept only letters at this point.")
-print("Ahhh, what wonderful name " + myName)
+print("Ahhh, what a wonderful name " + myName)
 print("Just the right number of leters")
 print(len(myName))
 #This is a is meant as a joke and will add 3 to the number you input also will REJECT non-numerical characters. Accepts floats though :D
