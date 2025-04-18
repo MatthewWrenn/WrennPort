@@ -16,5 +16,4 @@ while True:
   except ValueError:
     print("Excuse me! I am programmed to accept only numbers at this point.")
 
-print("Incorrect a Woodchuck can chuck" + str(round(chuckedwood + 3, 2)) +
-      " chucks of wood!")
+print(f"Incorrect a Woodchuck can {round(chuckedwood + 3, 2)} chucks of wood!")
