@@ -1,7 +1,7 @@
 # This will say hello and ask for your name and REJECT non-alphabetical characters
 print("Ello' Guv")
 while True:
-  myName = input("Wot's you're name? ")
+  myName = input("Wot's your name? ")
   if myName.replace(" ", "").isalpha():
     break
   print("Oi mate, letters only!")
@@ -19,5 +19,5 @@ while True:
   except ValueError:
     print("Oi you gettin' cheeky wiv me guv? Numbas only!")
 
-print("Incorrect a Woodchuck can " + str(round(chuckedwood + 3, 2)) +
+print("Incorrect a Woodchuck can chuck" + str(round(chuckedwood + 3, 2)) +
       " chucks of wood!")
