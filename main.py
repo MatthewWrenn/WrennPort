@@ -11,8 +11,7 @@ print(len(myName))
 #This is a is meant as a joke and will add 3 to the number you input also will REJECT non-numerical characters. Accepts floats though :D
 while True:
   try:
-    chuckedwood = float(
-        input("How much wood could a woodchuck chuck if a wood chuck could chuck wood?"))
+    chuckedwood = float(input("How much wood could a woodchuck chuck if a wood chuck could chuck wood?"))
     break
   except ValueError:
     print("Excuse me! I am programmed to accept only numbers at this point.")
