@@ -12,9 +12,7 @@ print(len(myName))
 while True:
   try:
     chuckedwood = float(
-        input(
-            "How much wood could a woodchuck chuck if a wood chuck could chuck wood? "
-        ))
+        input("How much wood could a woodchuck chuck if a wood chuck could chuck wood?"))
     break
   except ValueError:
     print("Excuse me! I am programmed to accept only numbers at this point.")
