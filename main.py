@@ -1,12 +1,12 @@
 # This will say hello and ask for your name and REJECT non-alphabetical characters
-print("Ello' Guv")
+print("Greeting and salutations!")
 while True:
-  myName = input("Wot's your name? ")
+  myName = input("Might I have your name?")
   if myName.replace(" ", "").isalpha():
     break
-  print("Oi mate, letters only!")
-print("Innit just a great name though, " + myName)
-print("Just the right number of leters at")
+  print("Excuse me! I am programmed to accept only letters at this point.")
+print("Ahhh, what wonderful name " + myName)
+print("Just the right number of leters")
 print(len(myName))
 #This is a is meant as a joke and will add 3 to the number you input also will REJECT non-numerical characters. Accepts floats though :D
 while True:
@@ -17,7 +17,7 @@ while True:
         ))
     break
   except ValueError:
-    print("Oi you gettin' cheeky wiv me guv? Numbas only!")
+    print("Excuse me! I am programmed to accept only numbers at this point.")
 
 print("Incorrect a Woodchuck can chuck" + str(round(chuckedwood + 3, 2)) +
       " chucks of wood!")
