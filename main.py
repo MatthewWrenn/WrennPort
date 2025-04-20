@@ -13,8 +13,13 @@ print(f"It has {len(myName)} letters - just perfect!")
 while True:
     try:
         chuckedwood = float(input("How much wood could a woodchuck chuck if a woodchuck could chuck wood? "))
-        break
+        if chuckedwood >= 0:
+            chuckedwood = chuckedwood * 10
+            chuckedwood = round(chuckedwood, 2)
+            break
+        else:   
+         print("Excuse me! I am programmed to accept only positive numbers at this point.")
     except ValueError:
         print("Excuse me! I am programmed to accept only numbers at this point.")
 
-print(f"Incorrect! A woodchuck can {round(chuckedwood + 3, 2)} chucks of wood!")
+print(f"Incorrect! A woodchuck can {chuckedwood} chucks of wood!")
