@@ -45,22 +45,6 @@ def split_text(text):
     output = float(text.split(": ")[1])
     return output
 
-#This is a second WebDriver that loads a headless browser that plays the Cowboy Bebop theme song from the internt archive.
-WebDPath  = "C:\\Users\\Matt\\Web_Driver\\chromedriver.exe"
-opt = webdriver.ChromeOptions()
-opt.add_argument("disable-infobars")
-opt.add_argument("start-maximized")
-opt.add_argument("no-sandbox")
-opt.add_argument("headless")
-opt.add_experimental_option("excludeSwitches", ["enable-automation"])
-opt.add_argument("--log-level=3") 
-service = Service(WebDPath)
-driver2 = webdriver.Chrome(service=service, options=opt)
-print("webdriver2 initialized successfully.")
-driver2.get("https://archive.org/details/tvtunes_10883")
-element = driver2.find_element("id", value="jw6").send_keys(Keys.RETURN)
-print("website2 loaded successfully.")
-
 key_thread = threading.Thread(target=check_keys, daemon=True)
 key_thread.start()
 
@@ -83,6 +67,3 @@ for i in range(1, 51):
         #close the driver
         driver.quit()
         print("WebDriver closed.")
-else:
-    driver2.quit()
-    print("Exitng...")
