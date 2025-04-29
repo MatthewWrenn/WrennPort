@@ -11,7 +11,7 @@ stop = False #setting it to false so the while loop won't trigger and break the 
 def check_keys():
     global stop #using global so I can change the value of stop in the function
     print("Press Enter to exit the loop.")
-    while not stop: #while stop == false it will listening for the enter press
+    while not stop: #while stop == false it will listen for the enter press
         if keyboard.is_pressed("enter"):  
             print("Enter key pressed. Ignoring further key presses.")
             stop = True  
