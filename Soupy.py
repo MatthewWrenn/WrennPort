@@ -34,7 +34,7 @@ def get_currency(Currency1, Currency2): #defines the currency varibles as parame
     content = requests.get(url).text #gets the sites souce code as text
     mySoup = BeautifulSoup(content, 'html.parser')#creates a varible that contains the html parser
     rate = mySoup.find("span", class_="ccOutputRslt").getText()#fills the rate varible the text from the exchnage rate box on the website
-    rate = float(rate[:4]) Parses off text the currency code text
+    rate = float(rate[:4]) #Parses off text the currency code text
     rate = round(rate, 3) #rounds the float is that bad for currecy exhange?
     return rate
 
