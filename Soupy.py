@@ -27,7 +27,7 @@ def user_input():
             else:
                 print("Invalid currency codes.")
                 continue
-user_input()
+
 def get_currency(Currency1, Currency2):
     url = f"https://www.x-rates.com/calculator/?from={Currency1}&to={Currency2}&amount=1"
     content = requests.get(url).text
