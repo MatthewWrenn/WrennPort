@@ -28,7 +28,7 @@ def user_input():
                 #prints an error if the codes given don't match those in the set
                 print("Invalid currency codes.")
                 continue
-#uses BeautifulSoup to create a useble url to scrape for the exhchange rates provided by the user in user input.
+#uses BeautifulSoup to create a useble url for the exhchange rates provided by the user in user input.
 def get_currency(Currency1, Currency2): #defines the currency varibles as parameters for this function.
     url = f"https://www.x-rates.com/calculator/?from={Currency1}&to={Currency2}&amount=1" #creates a varible containing the url we wish to parse.
     content = requests.get(url).text #gets the sites souce code as text
