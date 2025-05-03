@@ -1,6 +1,6 @@
 import requests
 
-r = requests.get("https://api.openweathermap.org/data/2.5/forecast?q=Seattle,US,WA&appid=8177c55ec4161a04f9b279b5ec254432&units=imperial")
+r = requests.get("https://api.openweathermap.org/data/2.5/forecast?q=Seattle,US,WA&appid=<your api key here>&units=imperial")
 content  = r.json() #gets the raw json data from the url.
 #gets our json data using the dict keys.
 temp = content["list"][0]["main"]["temp"]
